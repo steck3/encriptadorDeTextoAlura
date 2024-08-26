@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto.</title>
+</head>
+<body>
+    <header> 
+        <img src="assets/Logo.png" alt="aluraLogo" class="logo">
+    </header>
+<main >
+    <section class="contenedorPrincipal"> 
+        <div>
+    <textarea class="cajaTexto" cols="30" rows="10" id="cajaTexto" placeholder="Ingrese el texto aqui"> </textarea>
+    <div class="validacion" id="validacion">
+        <h6 class="validaTexto">Solo letras minusculas sin acentos.</h6>
+        <span class="material-symbols-outlined"> </span>
+        <span class="validacionTexto">Solo letras minúsculas y sin acentos</span>
+    </div>
+    </div>
+    
+    <div class="areaBotones" id="areaBotones">
+        <button class="botones" id="btnCodificar">Encriptar</button>
+        <button class="botones" id="btnDecodificar">Desencriptar</button>
+    </div>
+    </section>
+    <section class="contenedorSecundario">
+        <textarea readonly class="cajaLectura" id="cajaLectura" cols="20" rows="10"> </textarea>
+        <button class="botones" id="btnCopiar">Copiar</button>
+    </section>
+</main>
+<footer>
+    <p>Enrique Ochoa Steck-Alura Challenge Encriptador-2024</p>
+</footer>
+</body>
+
+</html>
