@@ -14,30 +14,37 @@
     <header> 
         <img src="assets/Logo.png" alt="aluraLogo" class="logo">
     </header>
-<main >
-    <section class="contenedorPrincipal"> 
+<main>
+    <section class="cajaPrimera"> 
         <div>
-    <textarea class="cajaTexto" cols="30" rows="10" id="cajaTexto" placeholder="Ingrese el texto aqui"> </textarea>
-    <div class="validacion" id="validacion">
-        <h6 class="validaTexto">Solo letras minusculas sin acentos.</h6>
-        <span class="material-symbols-outlined"> </span>
-        <span class="validacionTexto">Solo letras minúsculas y sin acentos</span>
+    <textarea class="cajaTexto" cols="30" rows="10" id="cajaTexto" placeholder="Ingrese el texto aqui"></textarea>
+    <div class="alertMsj" id="alertMsj">
+        <img src="assets/bi_exclamation-circle-fill.svg" alt="alert" class="icono"><span class="alertMsj">Solo letras minusculas, sin acentos.</span>
+
     </div>
     </div>
     
-    <div class="areaBotones" id="areaBotones">
-        <button class="botones" id="btnCodificar">Encriptar</button>
-        <button class="botones" id="btnDecodificar">Desencriptar</button>
+    <div  id="areaBotones">
+        <button class="btnEncriptar" id="btnEncriptar">Encriptar</button>
+        <button class="btnDesencriptar" id="btnDesencriptar">Desencriptar</button>
     </div>
     </section>
-    <section class="contenedorSecundario">
-        <textarea readonly class="cajaLectura" id="cajaLectura" cols="20" rows="10"> </textarea>
-        <button class="botones" id="btnCopiar">Copiar</button>
-    </section>
+    <aside class="resultado"> 
+        <div class="caja2">
+        <img src="assets/Muñeco.png" alt="Imagen monito" class="monito">
+        <h3 class="resultadoVacio">Ningún mensaje fue encontrado</h3>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        <button class="btnCopiar" id="btnCopiar">Copiar</button>
+    </div>
+    </aside>
+    
 </main>
-<footer>
-    <p>Enrique Ochoa Steck-Alura Challenge Encriptador-2024</p>
-</footer>
+<div>
+    <footer>
+        <p>Enrique Ochoa Steck-Alura Challenge Encriptador-2024</p>
+    </footer>
+</div>
+
 </body>
 
 </html>
