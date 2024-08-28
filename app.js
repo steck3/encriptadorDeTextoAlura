@@ -63,10 +63,12 @@ botonEncriptar.addEventListener("click", (e) => {
 
 botonCopiar.addEventListener("click",()=>{
     let textoCopiado = textoResultado.textContent;
-    navigator.clipboard.readText(textoCopiado).then(()=>{
+    navigator.clipboard.writeText(textoCopiado).then(()=>{
         console.log(`Se copio el texto: ${textoCopiado}`);
          tituloResultado.textContent ="Se ha copiado tu mensaje al portapapeles..."
         imagenMonito.style.display= "block";
+        botonCopiar.classList.add("hidden");
+        textoResultado.textContent="";
     })
 
 })
