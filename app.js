@@ -1,3 +1,4 @@
+const textArea =document.querySelector(".cajaTexto");
 const llaves = [
     ["e","enter"],
     ["i","imes"],
@@ -5,7 +6,9 @@ const llaves = [
     ["o","ober"],
     ["u","ufat"]
 ];
-function encriptaMensaje(){
+
+//Funcion Encriptar
+function encriptaMensaje(mensaje){
     let mensajeEncriptado ="";
     for(let i=0; i< mensajeEncriptado.length; i++){
         let letra = mensaje.length[i];
@@ -20,5 +23,13 @@ function encriptaMensaje(){
     }
     return mensajeEncriptado;
 }
+//funcion Desencriptar
+function desencriptaMsj (mensaje){
+    let mensajeDesencriptado = mensaje;
+    for (let i =0; i< llaves.length; i++){
+        let regex = new RegExp(llaves[i][1], 'g');
+        mensajeDesencriptado = mensajeDesencriptado.replace(regex, llaves[i][0])
+    }
+    return mensajeDesencriptado;
+}
 
-let letra;
